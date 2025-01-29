@@ -14,9 +14,6 @@ end)
 Section:NewKeybind("HIde gui", "Hides the gui", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
-Section:NewDropdown("DropdownText", "DropdownInf", {"script reload", "Option 2", "Option 3"}, function(currentOption)
-    print("SCRITP WORKS")
-end)
 
 
 
