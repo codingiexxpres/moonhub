@@ -24,7 +24,7 @@ end)
 
 
 local Tab = Window:NewTab("ROBLOX SCRIPTS")
-local Section = Tab:NewSection("test")
+local Section = Tab:NewSection("SCRIPT HUB V1")
 
 Section:NewButton("BBFT", "ButtonInfo", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Build-A-Boat-For-Treasure-BBFT-Script-24996"))()
@@ -37,8 +37,5 @@ end)
 Section:NewButton("infiniteyield", "ButtonInfo", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
-
-
-
 
 
