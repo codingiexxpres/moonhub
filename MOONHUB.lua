@@ -6,6 +6,11 @@ Section:NewButton("kick you self", "kick", function()
     game.Players.LocalPlayer:Kick(kicked)
 end)
 
+Section:NewSlider("WALKSPEED", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+
 Section:NewKeybind("HIde gui", "Hides the gui", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
@@ -13,7 +18,7 @@ Section:NewLabel("SCRIPT LOG")
 
 
 Section:NewButton("SCRITP RELOAD", "look in the conole for more infos", function()
-newLabel:UpdateLabel("RELOAD DONE SCRIPT WORKS IS IN DEV/WIP")
+NewLabel:UpdateLabel("RELOAD DONE SCRIPT WORKS IS IN DEV/WIP")
 	end)
 
 
@@ -26,9 +31,6 @@ local colors = {
     ElementColor = Color3.fromRGB(20, 20, 20)
 }
 
-Section:NewSlider("ws", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
 
 
 
