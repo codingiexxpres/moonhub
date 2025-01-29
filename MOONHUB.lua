@@ -51,7 +51,7 @@ end)
 local Tab = Window:NewTab("MISC")
 local Section = Tab:NewSection("MISC")
 
-Section:NewButton("SCRIPT", "ButtonInfo", function()
+Section:NewButton("SR", "?", function()
   game.Players.LocalPlayer:Kick(SCRIPT HAS REBOOTET)
 end)
 		
