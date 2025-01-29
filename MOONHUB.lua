@@ -17,9 +17,14 @@ local colors = {
     ElementColor = Color3.fromRGB(20, 20, 20)
 }
 
+Section:NewSlider("ws", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
 
 
 local Tab = Window:NewTab("ROBLOX SCRIPTS")
+local Section = Tab:NewSection("test")
 
 Section:NewButton("BBFT", "ButtonInfo", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Build-A-Boat-For-Treasure-BBFT-Script-24996"))()
@@ -33,9 +38,7 @@ Section:NewButton("infiniteyield", "ButtonInfo", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-Section:NewSlider("ws", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
 
-local Section = Tab:NewSection("test")
+
+
 
