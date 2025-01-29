@@ -51,7 +51,7 @@ end)
 local Tab = Window:NewTab("MISC")
 local Section = Tab:NewSection("MISC")
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
+Section:NewButton("discord invite (inclipboard)", "ButtonInfo", function()
     filename = 'https://discord.gg/BcURTGmYZb'
 io.popen('clip','w'):write(filename):close()
 end)
