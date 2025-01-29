@@ -9,6 +9,27 @@ end)
 Section:NewKeybind("HIde gui", "Hides the gui", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
+
+
+Section:NewButton("fly", "ButtonInfo", function()
+    local p = game.Players.LocalPlayer
+local bo = game:GetService(“UserInputService”)
+local hrp = p.Character:WaitForChild(“HumanoidRootPart”)
+local t = function()
+game.Players:WaitForChild(“Humanoid”).Character.CFrame = CFrame.new(0,10,0)
+end
+
+bo.InputBegan:Connect(function(input, gameProcessedEvent)
+if input.UserInputType == Enum.UserInputType.Keyboard then
+if input.KeyCode == Enum.KeyCode.P then
+function t()
+end
+end
+end
+end)
+
+
+
 local colors = {
     SchemeColor = Color3.fromRGB(0,255,255),
     Background = Color3.fromRGB(0, 0, 0),
@@ -38,24 +59,5 @@ Section:NewButton("infiniteyield", "ButtonInfo", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-local Tab = Window:NewTab("MISC")
-local Section = Tab:NewSection("alpha testing")
-
-Section:NewButton("fly", "ButtonInfo", function()
-    local p = game.Players.LocalPlayer
-local bo = game:GetService(“UserInputService”)
-local hrp = p.Character:WaitForChild(“HumanoidRootPart”)
-local t = function()
-game.Players:WaitForChild(“Humanoid”).Character.CFrame = CFrame.new(0,10,0)
-end
-
-bo.InputBegan:Connect(function(input, gameProcessedEvent)
-if input.UserInputType == Enum.UserInputType.Keyboard then
-if input.KeyCode == Enum.KeyCode.P then
-function t()
-end
-end
-end
-end)
 
 
