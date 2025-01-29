@@ -48,12 +48,5 @@ Section:NewButton("infiniteyield", "ButtonInfo", function()
 end)
 
 
-local Tab = Window:NewTab("MISC")
-local Section = Tab:NewSection("MISC")
-
-Section:NewButton("sr",?", function()
-  game.Players.LocalPlayer:Kick(SCRIPT HAS REBOOTET)
-end)
-		
 
 
