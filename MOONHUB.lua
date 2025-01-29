@@ -37,4 +37,5 @@ Section:NewSlider("ws", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
+local Section = Tab:NewSection("test")
 
