@@ -51,9 +51,8 @@ end)
 local Tab = Window:NewTab("MISC")
 local Section = Tab:NewSection("MISC")
 
-Section:NewButton("discord invite ", "ButtonInfo", function()
-    filename = 'https://discord.gg/BcURTGmYZb'
-io.popen('clip','w'):write(filename):close()
+Section:NewButton("REBOOT-SCRIPT", "ButtonInfo", function()
+  game.Players.LocalPlayer:Kick(SCRIPT HAS REBOOTET)
 end)
 		
 
