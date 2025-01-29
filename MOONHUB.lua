@@ -13,7 +13,7 @@ Section:NewLabel("SCRIPT LOG")
 
 
 Section:NewButton("SCRITP RELOAD", "look in the conole for more infos", function()
-label:UpdateLabel("RELOAD DONE SCRIPT WORKS IS IN DEV/WIP")
+newLabel:UpdateLabel("RELOAD DONE SCRIPT WORKS IS IN DEV/WIP")
 	end)
 
 
