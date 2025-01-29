@@ -14,8 +14,8 @@ end)
 Section:NewKeybind("HIde gui", "Hides the gui", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
-Section:NewDropdown("DropdownText", "DropdownInf", {"Option 1", "Option 2", "Option 3"}, function(currentOption)
-    print(currentOption)
+Section:NewDropdown("DropdownText", "DropdownInf", {"script reload", "Option 2", "Option 3"}, function(currentOption)
+    print("SCRITP WORKS")
 end)
 
 
@@ -51,7 +51,7 @@ end)
 local Tab = Window:NewTab("MISC")
 local Section = Tab:NewSection("MISC")
 
-Section:NewButton("discord invite (inclipboard)", "ButtonInfo", function()
+Section:NewButton("discord invite ", "ButtonInfo", function()
     filename = 'https://discord.gg/BcURTGmYZb'
 io.popen('clip','w'):write(filename):close()
 end)
