@@ -47,6 +47,14 @@ Section:NewButton("infiniteyield", "ButtonInfo", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
+
+local Tab = Window:NewTab("MISC")
+local Section = Tab:NewSection("MISC")
+
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    filename = 'https://discord.gg/BcURTGmYZb'
+io.popen('clip','w'):write(filename):close()
+end)
 		
 
 
