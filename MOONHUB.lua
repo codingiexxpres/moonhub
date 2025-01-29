@@ -14,12 +14,10 @@ end)
 Section:NewKeybind("HIde gui", "Hides the gui", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
-Section:NewLabel("SCRIPT LOG")
+Section:NewDropdown("DropdownText", "DropdownInf", {"Option 1", "Option 2", "Option 3"}, function(currentOption)
+    print(currentOption)
+end)
 
-
-Section:NewButton("SCRITP RELOAD", "look in the conole for more infos", function()
-NewLabel:UpdateLabel("RELOAD DONE SCRIPT WORKS IS IN DEV/WIP")
-	end)
 
 
 
