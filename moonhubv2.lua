@@ -16,6 +16,9 @@ Section:NewKeybind("HIde gui", "Hides the gui", Enum.KeyCode.F, function()
 end)
 
 
+Section:NewLabel("made by anti_cheat95")
+
+
 
 
 local colors = {
